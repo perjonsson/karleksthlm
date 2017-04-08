@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: karlek
+  api_key: '125831522253712'
+  api_secret: 3jGm8_gPg29_hS2lg7YG03FOFTM
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: karlek
+  api_key: '125831522253712'
+  api_secret: 3jGm8_gPg29_hS2lg7YG03FOFTM
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: karlek
+  api_key: '125831522253712'
+  api_secret: 3jGm8_gPg29_hS2lg7YG03FOFTM
+  enhance_image_tag: true
+  static_image_support: false

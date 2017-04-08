@@ -1,14 +1,53 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Karleksthlm</title>
-    <%= csrf_meta_tags %>
+    <!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+    <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+    <!--[if (gte IE 8)|!(IE)]><!-->
+    <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+       <!--- Basic Page Needs
+       ================================================== -->
+       <meta charset="utf-8">
+    	<title>Kärlek till Stockholm</title>
+    	<meta name="description" content="">
+    	<meta name="author" content="">
+
+       <!-- Mobile Specific Metas
+       ================================================== -->
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    	<!-- CSS
+        ================================================== -->
+
+       <%= csrf_meta_tags %>
+       <%= stylesheet_link_tag :application, media: "all", 'data-turbolinks-track' => 'reload' %>
+       <!-- Java Script
+       ================================================== -->
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+       <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+       <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+    	<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+
+       <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+
+
+       <!-- Script
+       ================================================== -->
+    	<script src="js/modernizr.js"></script>
+
+      <script>
+        $("#intro").backstretch("<%= cl_image_path("stockholm", {:width=>1920, :height=>1080, :effect=> :sharpen, :crop=>:fill, :effect=>"brightness_hsb:-80"}) %>");
+      </script>
+
+       <!-- Favicons
+    	================================================== -->
+    	<link rel="shortcut icon" href="favicon.png" >
+
+    </head>
 
   <body>
     <%= yield %>
   </body>
-</html>
+
+ </html>
